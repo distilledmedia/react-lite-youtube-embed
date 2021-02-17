@@ -1,6 +1,5 @@
 import _slicedToArray from "@babel/runtime/helpers/esm/slicedToArray";
-import React, { Fragment, useState } from "react";
-import "./LiteYouTubeEmbed.css";
+import React, { Fragment, useState } from 'react';
 
 var LiteYouTubeEmbed = function LiteYouTubeEmbed(_ref) {
   var adNetwork = _ref.adNetwork,
@@ -27,7 +26,7 @@ var LiteYouTubeEmbed = function LiteYouTubeEmbed(_ref) {
   var videoId = encodeURIComponent(id);
   var videoTitle = title;
   var posterUrl = "https://i.ytimg.com/vi/".concat(videoId, "/").concat(poster, ".jpg");
-  var ytUrl = noCookie ? "https://www.youtube-nocookie.com" : "https://www.youtube.com";
+  var ytUrl = noCookie ? 'https://www.youtube-nocookie.com' : 'https://www.youtube.com';
   var iframeSrc = !playlist ? "".concat(ytUrl, "/embed/").concat(videoId, "?autoplay=1") : "".concat(ytUrl, "/embed/videoseries?list=").concat(videoId);
 
   var warmConnections = function warmConnections() {
@@ -80,14 +79,14 @@ var LiteYouTubeEmbed = function LiteYouTubeEmbed(_ref) {
 
 LiteYouTubeEmbed.defaultProps = {
   adNetwork: true,
-  id: "",
+  id: '',
   playlist: false,
-  poster: "hqdefault",
-  title: "YouTube Embed",
+  poster: 'hqdefault',
+  title: 'YouTube Embed',
   noCookie: false,
-  activatedClass: "lyt-activated",
-  iframeClass: "",
-  playerClass: "lty-playbtn",
-  wrapperClass: "yt-lite"
+  activatedClass: 'lyt-activated',
+  iframeClass: '',
+  playerClass: 'lty-playbtn',
+  wrapperClass: 'yt-lite'
 };
 export default LiteYouTubeEmbed;
